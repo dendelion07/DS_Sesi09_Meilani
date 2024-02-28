@@ -34,8 +34,17 @@ describe('Swag Labs', () => {
         await LoginPage.validateInvalidPassword()
     })
 
-    it('should login with standard_user', async () => {
+
+    it('should add product to cart', async () => {
         // TODO: akan dibuatkan scenario positif case 
+        await HomePage.open()
+        await HomePage.addBackpackToCart()
+    })
+
+    it('should remove product from cart', async () => {
+        // TODO: akan dibuatkan scenario positif case 
+        await HomePage.open()
+        await HomePage.removeBackpackFromCart()
     })
 
 })
